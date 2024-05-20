@@ -37,7 +37,10 @@
   width: 100%;
   overflow: hidden;
 }
-
+/* indicator */
+.citrusStylesSE-carousel-indicators {
+  padding: 6px 9.5px 2.5px;
+}
 /* pov text */
 .citrusStylesSE__pov-img {
   position: relative;
@@ -90,6 +93,7 @@
   object-fit: contain;
 }
 
+.citrusStylesSE-btn-secondary-white .citrusStylesSE-url,
 .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
   padding: 0;
   width: 184px;
@@ -103,12 +107,13 @@ h1.citrusStylesSE_pov-text__title {
 }
 
 p.citrusStylesSE_pov-text__subhead {
-  margin: 5px 0;
+  margin: 0 0 20px;
   height: max-content;
   max-width: 95%;
   font-size: 19px;
   color: #505827;
   font-family: "PetcoCircular-medium";
+  text-align: center;
 }
 .pov01 h1.citrusStylesSE_pov-text__title,
 .pov01 p.citrusStylesSE_pov-text__subhead {
@@ -129,7 +134,6 @@ p.citrusStylesSE_pov-text__subhead {
 }
 .citrusStylesSE_pov-text .citrusStylesSE-btn-primary-navy {
   margin-top: 10px;
-  justify-content: flex-start;
   column-gap: 20px;
 }
 .citrusStylesSE_pov-text .citrusStylesSE-btn-secondary-white {
@@ -137,9 +141,10 @@ p.citrusStylesSE_pov-text__subhead {
 }
 
 .citrusStylesSE_pov-text p.citrusStylesSE__disclaimer {
-  margin-top: 5px;
+  margin-top: 18px;
   font-size: 12px;
   color: #505827;
+  text-align: center;
 }
 .pov01 .citrusStylesSE_pov-text p.citrusStylesSE__disclaimer {
   color: #f1efd9;
@@ -197,6 +202,7 @@ p.citrusStylesSE_pov-text__subhead {
 
   p.citrusStylesSE_pov-text__subhead {
     font-size: 13px;
+    margin: 0;
   }
 
   .pov02 h1.citrusStylesSE_pov-text__title {
@@ -212,11 +218,17 @@ p.citrusStylesSE_pov-text__subhead {
     font-size: 14px;
     margin-left: 0;
   }
+  .citrusStylesSE_pov-text p.citrusStylesSE__disclaimer {
+    margin-top: 0px;
+    font-size: 12px;
+    color: #505827;
+    text-align: center;
+  }
   .citrusStylesSE-btn-primary-navy .citrusStylesSE-url,
   .citrusStylesSE-btn-secondary-white .citrusStylesSE-url {
     padding: 0;
-    width: 174px;
-    line-height: 44px;
+    width: 150px;
+    line-height: 40px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
@@ -241,6 +253,11 @@ p.citrusStylesSE_pov-text__subhead {
   .pov03 p.citrusStylesSE_pov-text__subhead {
     font-size: 15px;
     margin-left: 0;
+  }
+  .citrusStylesSE-btn-secondary-white .citrusStylesSE-url,
+  .citrusStylesSE_pov-text .citrusStylesSE-btn-primary-navy {
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 1023px) {
@@ -269,7 +286,7 @@ p.citrusStylesSE_pov-text__subhead {
   }
   .citrusStylesSE_pov-text {
     top: 80px;
-    width: 216px;
+    width: 250px;
     margin: auto;
     height: fit-content;
     margin-bottom: 80px;
@@ -280,9 +297,11 @@ p.citrusStylesSE_pov-text__subhead {
     width: 350px;
     right: 0;
   }
-  .citrusStylesSE_pov-text__wrapper {
+  .citrusStylesSE_pov-text__wrapper,
+  .pov01 .citrusStylesSE_pov-text__wrapper {
     flex-direction: column;
     top: 0;
+    align-items: center;
     text-align: center;
   }
 
@@ -321,6 +340,7 @@ p.citrusStylesSE_pov-text__subhead {
     line-height: normal;
     justify-content: center;
     margin-bottom: 10px;
+    width: max-content;
   }
   .citrusStylesSE_pov-text p.citrusStylesSE__disclaimer {
     margin-top: 0px;
@@ -328,6 +348,11 @@ p.citrusStylesSE_pov-text__subhead {
   .citrusStylesSE_pov-logo {
     max-width: 106px;
     left: calc(100% / 2 - 53px) !important;
+  }
+  .citrusStylesSE-btn-secondary-white .citrusStylesSE-url,
+  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
+    width: max-content;
+    line-height: 30px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 767px) {
@@ -338,5 +363,46 @@ p.citrusStylesSE_pov-text__subhead {
 @media only screen and (min-width: 425px) and (max-width: 599px) {
   .citrusStylesSE_pov-text {
     top: 120px;
+  }
+  .pov01 .citrusStylesSE_pov-text {
+    top: 80px;
+  }
+  .pov03 .citrusStylesSE_pov-text {
+    top: 100px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .citrusStylesSE_pov-text,
+  .pov02 .citrusStylesSE_pov-text,
+  .pov03 .citrusStylesSE_pov-text {
+    width: 95%;
+  }
+  h1.citrusStylesSE_pov-text__title {
+    font-size: 20px;
+    line-height: 1.3rem;
+  }
+
+  p.citrusStylesSE_pov-text__subhead {
+    font-size: 15px;
+  }
+
+  .pov02 h1.citrusStylesSE_pov-text__title {
+    font-size: 20px;
+  }
+  .pov03 h1.citrusStylesSE_pov-text__title {
+    font-size: 20px;
+  }
+  .pov02 p.citrusStylesSE_pov-text__subhead {
+    font-size: 15px;
+  }
+  .pov03 p.citrusStylesSE_pov-text__subhead {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .pov01 .citrusStylesSE_pov-text,
+  .pov03 .citrusStylesSE_pov-text {
+    top: 65px;
   }
 }
