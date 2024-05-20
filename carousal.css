@@ -1,0 +1,342 @@
+/* POV style */
+.citrusStylesSE-tablet-version {
+  display: none;
+}
+.citrusStylesSE-carousel {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  display: none;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.citrusStylesSE-carousel,
+.citrusStylesSE-carousel__inner,
+.citrusStylesSE-carousel__inner--item,
+.citrusStylesSE__pov-img img {
+  height: 262px;
+  object-fit: fill;
+}
+
+.citrusStylesSE-carousel
+  .citrusStylesSE-carousel__inner
+  .citrusStylesSE-carousel__inner--item {
+  display: block;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.citrusStylesSE-carousel__inner {
+  display: flex;
+  transition: all ease 0.5s;
+}
+
+.citrusStylesSE-carousel__inner--item {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* pov text */
+.citrusStylesSE__pov-img {
+  position: relative;
+  width: 100%;
+}
+
+.citrusStylesSE_pov-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+.pov01 .citrusStylesSE_pov-text {
+  left: 0;
+  right: 0;
+}
+.pov02 .citrusStylesSE_pov-text {
+  left: unset;
+  right: 40px;
+}
+.pov03 .citrusStylesSE_pov-text {
+  left: 40px;
+  right: unset;
+}
+.citrusStylesSE_pov-text__wrapper {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.pov01 .citrusStylesSE_pov-text__wrapper {
+  align-items: start;
+  padding-top: 20px;
+}
+.pov01 .citrusStylesSE_pov-logo,
+.pov02 .citrusStylesSE_pov-logo {
+  position: absolute;
+  left: 16px;
+  top: 0;
+}
+.pov03 .citrusStylesSE_pov-logo {
+  position: absolute;
+  right: 30px;
+  top: 0;
+}
+.citrusStylesSE_pov-logo img {
+  width: 123px;
+  object-fit: contain;
+}
+
+.citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
+  padding: 0;
+  width: 184px;
+  line-height: 54px;
+}
+
+h1.citrusStylesSE_pov-text__title {
+  font-size: 36px;
+  font-family: "PetcoCircular-Black";
+  color: #505827;
+}
+
+p.citrusStylesSE_pov-text__subhead {
+  margin: 5px 0;
+  height: max-content;
+  max-width: 95%;
+  font-size: 19px;
+  color: #505827;
+  font-family: "PetcoCircular-medium";
+}
+.pov01 h1.citrusStylesSE_pov-text__title,
+.pov01 p.citrusStylesSE_pov-text__subhead {
+  color: #f1efd9;
+  text-align: center;
+}
+.pov02 h1.citrusStylesSE_pov-text__title {
+  font-size: 33px;
+}
+.pov03 h1.citrusStylesSE_pov-text__title {
+  font-size: 29px;
+}
+.pov02 p.citrusStylesSE_pov-text__subhead {
+  font-size: 16px;
+}
+.pov03 p.citrusStylesSE_pov-text__subhead {
+  font-size: 18px;
+}
+.citrusStylesSE_pov-text .citrusStylesSE-btn-primary-navy {
+  margin-top: 10px;
+  justify-content: flex-start;
+  column-gap: 20px;
+}
+.citrusStylesSE_pov-text .citrusStylesSE-btn-secondary-white {
+  column-gap: 20px;
+}
+
+.citrusStylesSE_pov-text p.citrusStylesSE__disclaimer {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #505827;
+}
+.pov01 .citrusStylesSE_pov-text p.citrusStylesSE__disclaimer {
+  color: #f1efd9;
+  text-align: center;
+}
+
+@media (max-width: 63.999em) {
+  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1350px) {
+  .pov02 .citrusStylesSE_pov-text {
+    right: 40px;
+    top: 0px;
+  }
+  .pov03 .citrusStylesSE_pov-text {
+    left: 40px;
+    top: 0px;
+  }
+  .pov01 .citrusStylesSE_pov-text__wrapper {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1240px) {
+  .citrusStylesSE-tablet-version {
+    display: block;
+  }
+  .citrusStylesSE-carousel,
+  .citrusStylesSE-carousel__inner,
+  .citrusStylesSE-carousel__inner--item,
+  .citrusStylesSE__pov-img img {
+    height: auto;
+    object-fit: contain;
+  }
+  .citrusStylesSE_pov-logo img {
+    width: 90px;
+  }
+  .pov02 .citrusStylesSE_pov-text {
+    right: 20px;
+    top: -8px;
+  }
+  .pov03 .citrusStylesSE_pov-text {
+    left: 20px;
+    top: -8px;
+  }
+  .pov01 .citrusStylesSE_pov-text__wrapper {
+    padding-top: 5px;
+  }
+  h1.citrusStylesSE_pov-text__title {
+    font-size: 20px;
+    line-height: 1.6rem;
+  }
+
+  p.citrusStylesSE_pov-text__subhead {
+    font-size: 13px;
+  }
+
+  .pov02 h1.citrusStylesSE_pov-text__title {
+    font-size: 18px;
+  }
+  .pov03 h1.citrusStylesSE_pov-text__title {
+    font-size: 17px;
+  }
+  .pov02 p.citrusStylesSE_pov-text__subhead {
+    font-size: 14px;
+  }
+  .pov03 p.citrusStylesSE_pov-text__subhead {
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url,
+  .citrusStylesSE-btn-secondary-white .citrusStylesSE-url {
+    padding: 0;
+    width: 174px;
+    line-height: 44px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  h1.citrusStylesSE_pov-text__title {
+    font-size: 26px;
+    line-height: 1.6rem;
+  }
+
+  p.citrusStylesSE_pov-text__subhead {
+    font-size: 16px;
+  }
+
+  .pov02 h1.citrusStylesSE_pov-text__title {
+    font-size: 24px;
+  }
+  .pov03 h1.citrusStylesSE_pov-text__title {
+    font-size: 23px;
+  }
+  .pov02 p.citrusStylesSE_pov-text__subhead {
+    font-size: 15px;
+  }
+  .pov03 p.citrusStylesSE_pov-text__subhead {
+    font-size: 15px;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .citrusStylesSE_pov-text .citrusStylesSE-btn-primary-navy {
+    margin-top: 5px;
+  }
+  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
+    width: max-content;
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .citrusStylesSE-carousel
+    .citrusStylesSE-carousel__inner
+    .citrusStylesSE-carousel__inner--item {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .citrusStylesSE-carousel,
+  .citrusStylesSE-carousel__inner,
+  .citrusStylesSE-carousel__inner--item,
+  .citrusStylesSE__pov-img img {
+    height: auto;
+  }
+  .citrusStylesSE_pov-text {
+    top: 80px;
+    width: 216px;
+    margin: auto;
+    height: fit-content;
+    margin-bottom: 80px;
+  }
+  .pov02 .citrusStylesSE_pov-text,
+  .pov03 .citrusStylesSE_pov-text {
+    left: 0;
+    width: 350px;
+    right: 0;
+  }
+  .citrusStylesSE_pov-text__wrapper {
+    flex-direction: column;
+    top: 0;
+    text-align: center;
+  }
+
+  .citrusStylesSE_pov-logo img {
+    width: 106px;
+  }
+
+  h1.citrusStylesSE_pov-text__title {
+    font-size: 26px;
+    line-height: 1.6rem;
+  }
+
+  p.citrusStylesSE_pov-text__subhead {
+    margin: 5px auto;
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .pov02 h1.citrusStylesSE_pov-text__title {
+    font-size: 25px;
+  }
+  .pov03 h1.citrusStylesSE_pov-text__title {
+    font-size: 25px;
+  }
+  .pov02 p.citrusStylesSE_pov-text__subhead {
+    font-size: 16px;
+  }
+  .pov03 p.citrusStylesSE_pov-text__subhead {
+    font-size: 18px;
+  }
+  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
+    line-height: normal;
+  }
+  .citrusStylesSE_pov-text .citrusStylesSE-btn-primary-navy,
+  .citrusStylesSE_pov-text .citrusStylesSE-btn-secondary-white {
+    line-height: normal;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .citrusStylesSE_pov-text p.citrusStylesSE__disclaimer {
+    margin-top: 0px;
+  }
+  .citrusStylesSE_pov-logo {
+    max-width: 106px;
+    left: calc(100% / 2 - 53px) !important;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .citrusStylesSE_pov-text {
+    top: 160px;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 599px) {
+  .citrusStylesSE_pov-text {
+    top: 120px;
+  }
+}
