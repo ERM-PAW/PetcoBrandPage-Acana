@@ -40,8 +40,8 @@ body {
 }
 
 @media screen and (min-width: 20em) {
-  .citrusStylesSE-url {
-    padding: var(--citrusStylesSE-spacing-small);
+  .citrusStylesSE-btn-primary-underline-navy .citrusStylesSE-url {
+    padding: var(--citrusStylesSE-spacing-small) 0;
   }
 }
 
