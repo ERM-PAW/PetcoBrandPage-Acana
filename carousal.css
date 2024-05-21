@@ -316,7 +316,7 @@ p.citrusStylesSE_pov-text__subhead {
   }
 
   .citrusStylesSE_pov-logo img {
-    width: 106px;
+    width: 90px;
   }
 
   h1.citrusStylesSE_pov-text__title {
@@ -357,7 +357,7 @@ p.citrusStylesSE_pov-text__subhead {
   }
   .citrusStylesSE_pov-logo {
     max-width: 106px;
-    left: calc(100% / 2 - 53px) !important;
+    left: calc(100% / 2 - 45px) !important;
   }
   .citrusStylesSE-btn-secondary-white .citrusStylesSE-url,
   .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
